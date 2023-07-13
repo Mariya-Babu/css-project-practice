@@ -1,0 +1,309 @@
+/* Body  */
+body{
+    margin: 0px;
+}
+.uni-padding{
+    padding: 0 7%;
+}
+/* Top Bar  */
+#topbar{
+    color: #fdfdfd;
+    background-color: #575757;
+    padding-top: 5px;
+    padding-bottom:5px;
+    overflow: auto;
+}
+#fav-icons{
+    float: right;
+}
+#tollfree{
+    float: left;
+}
+/* Logo Bar  */
+#logo{
+    padding: 2px 30px;
+    display: inline-block;
+    background-color: coral;
+    color: #fdfdfd;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 25px 0px;
+}
+/* Nav Bar  */
+#nav-bar{
+    background-color: coral;
+    padding: 4px 0px;
+    margin: 0px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 0px;
+}
+nav ul li a{
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Poster */
+#poster{
+    position: relative;
+    background-image: url('../Images/img6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+#poster-bakground{
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background-color: black;
+    height:100%;
+    width:100%;
+    z-index: 1;
+}
+#poster h1{
+    font-size: 50px;
+    z-index:2;
+}
+#poster p{
+    font-size: 18px;
+    z-index:3;
+}
+/* Why Us Section  */
+#whysection{
+    overflow: auto;
+    text-align: center;
+}
+#whysection img{
+    height: 100px;
+    width: 80px;
+}
+#whysection h3{
+    color: coral;
+    font-weight: 800;
+}
+.red-heading{
+    color: coral;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.section33{
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 30px;
+}
+#contact-us{
+    background-color: coral;
+    color: white;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section70{
+    width: 70%;
+    float: left;
+}
+.section30{
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+}
+#contact-btn{
+    background-color: white;
+    color: coral;
+    text-decoration: none;
+    padding: 13px 50px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+/* Blog  */
+.section33 a{
+    color: coral;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Subscribe  */
+#subscribe{
+    background-color: coral;
+    color: white;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section50{
+    width: 50%;
+    float: left;
+}
+.section50 h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: right;
+}
+.section50 input[type="text"]{
+    color: coral;
+    padding: 10px 40px;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 15px;
+    width: 200px;
+    border: 0px;
+}
+.section50 input[type="submit"]{
+    color: coral;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: 0px;
+    margin-left: 50px;
+}
+/* Fotter  */
+footer{
+    padding: 0px;
+    margin: 0px;
+}
+#imp-links{
+    background-color: #575757;
+    color: #fdfdfd;
+    margin-top: 0px;
+    overflow: auto;
+}
+.div33{
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    text-align: justify;
+}
+.div33 h3{
+    color: #fdfdfd;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    font-size: 25px;
+}
+#footermenu-container{
+    padding-left: 100px;
+}
+#footer-menu li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+#footer-menu li a{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+#copyright{
+    background-color: #222f3e;
+    color: #cbcbcb;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+/* Responsive Ipad  */
+@media only screen and (max-width:850px){
+    .section50 input[type="submit"] {
+        margin-top: 30px;
+        display: flex;
+        margin-left: 40%;
+    }
+    #footermenu-container {
+        padding-left: 35px;
+    }
+}
+/* Responsive Mobile  */
+#cross, #hb{
+    display: none;
+}
+@media only screen and (max-width:500px){
+    #logo{
+        margin-left: 100px;
+    }
+    .div33, .section30, .section33, .section50, .section70{
+        width: 100%;
+    }
+    #contact-us{
+        text-align: center;
+    }
+    .section50 h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .div33{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #footermenu-container {
+        padding-left: 0px;
+    }
+    #footermenu-container ul li{
+        text-align: center;
+        padding-right: 50px;
+    }
+    #contact-btn{
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+    .section50 input[type="text"]{
+        margin-left: 30px;
+    }
+}
+/* Mobile Navigaion  */
+@media only screen and (max-width:500px){
+    #nav-bar{
+        height: 100vh;
+        width: 300px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 4;
+    }
+    #nav-bar ul li{
+        display: block;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgb(179, 161, 161);
+        padding-bottom: 10px;
+    }
+    #nav-bar{
+        left: -300px;
+        transition: all 0.5s ease;
+    }
+    #hb{
+        background-color: coral;
+        color: white;
+        font-size: 18px;
+        margin: 0px;
+        text-underline-offset: -2px;
+        text-decoration-thickness: 1px;
+    }
+    #hb a{
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+    }
+    #cross{
+        color: white;
+        text-align: right;
+        font-size: 20px;
+        border: none;
+    }
+    #cross a{
+        text-decoration: none;
+        color: white;
+    }
+    #cross, #hb{
+        display: block;
+    }
+}
